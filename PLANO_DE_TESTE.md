@@ -110,7 +110,7 @@ A estratégia combina **testes exploratórios manuais** (para descoberta de comp
 | R-01 | API indisponível (cold start no Render) | Média | Alto | Aguardar 30s e retentar; documentar tempo de resposta |
 | R-02 | IDs de motorista/veículo alterados sem aviso | Baixa | Alto | Usar `GET /abastecimentos` para confirmar IDs antes de testes |
 | R-03 | Rate limit atingido durante execução de testes | Média | Médio | Controlar o volume de requisições no Postman para não exceder 15 req/min, aguardando alguns segundos entre envios em lote |
-| R-04 | Ambiente de staging com dados resetados | Baixa | Médio | Scripts criam e limpam próprios dados via CRUD |
+| R-04 | Ambiente de staging com dados resetados | Baixa | Médio | Criar massa de dados manualmente via POST antes de testar fluxos de edição/deleção. |
 | R-05 | RN-08 sem veículos elétricos cadastrados para validar | Alta | Baixo | Documentar limitação; testar com ID hipotético e registrar comportamento real |
 | R-06 | Comportamento de arredondamento dependente de linguagem do backend | Baixa | Baixo | Testar casos específicos de ponto flutuante |
 
